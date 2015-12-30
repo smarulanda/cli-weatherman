@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-var path = require('path');
-var pkg = require(path.join(__dirname, 'package.json'));
 var program = require('commander');
 var request = require('request');
 var querystring = require("querystring");
@@ -10,7 +8,6 @@ var geoUrl = 'http://freegeoip.net/json';
 var yqlUrl = 'https://query.yahooapis.com/v1/public/yql?';
 
 program
-	.version(pkg.version)
 	.usage('[options]')
 	.option('-C, --celsius', 'Show temperatures in celsius')
 	.option('-z, --zip <zip>', 'Return weather for a specific zip code')
@@ -61,5 +58,5 @@ function getWeather(zip) {
 
 			console.log('');
 		}
-	});	
+	});
 }
