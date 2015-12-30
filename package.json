@@ -1,6 +1,6 @@
 {
   "name": "cli-weatherman",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A command line utility that displays the current/forecasted weather",
   "keywords": [
     "weather",
