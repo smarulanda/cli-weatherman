@@ -1,6 +1,6 @@
 # CLI Weather and Forecast
 
-This is a node.js command line tool that will print weather and 5-day forecast information for your current (or specified) location.
+This is a node.js command line tool that will print weather and 5-day forecast information for the user's current (or specified) location.
 
 If the user does not provide a ZIP code as a command-line argument, then the script uses [freegeoip](https://freegeoip.net/) to determine the user's location based on their IP address. Location information is then passed to Yahoo's weather [YQL API](https://developer.yahoo.com/weather/) to determine current and future weather.
 
