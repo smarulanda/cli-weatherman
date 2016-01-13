@@ -7,13 +7,13 @@ If the user does not provide a ZIP code as a command-line argument, then the scr
 ## Installation
 This tool is available on [npm](https://www.npmjs.com/package/cli-weatherman). Use the -g flag to install it globally:
 ```
-npm install -g cli-weatherman
+$ npm install -g cli-weatherman
 ```
 ## Command Line Interface
 
 Usage:
 ```
-weatherman [options]
+$ weatherman [options]
 ```
 
 Options:
@@ -26,7 +26,7 @@ Options:
 
 Examples:
 ```
-weatherman
-weatherman -C
-weatherman -z 90210
+$ weatherman
+$ weatherman -C
+$ weatherman -z 90210
 ```
