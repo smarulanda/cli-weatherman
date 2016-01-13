@@ -3,7 +3,7 @@
 var pkg = require('./package.json');
 var program = require('commander');
 var request = require('request');
-var querystring = require("querystring");
+var querystring = require('querystring');
 
 var geoUrl = 'http://freegeoip.net/json';
 var yqlUrl = 'https://query.yahooapis.com/v1/public/yql?';
