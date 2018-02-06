@@ -28,8 +28,10 @@ else {
 }
 
 function getWeather(zip) {
+	var geoQuery = 'select woeid from geo.places(1) where text="' + zip + '"';
+
 	var yqlArgs = {
-		q: 'select * from weather.forecast where location=' + zip + ' and u=' + (program.celsius ? '"c"' : '"f"'),
+		q: 'select * from weather.forecast where woeid in (' + geoQuery + ') and u=' + (program.celsius ? '"c"' : '"f"'),
 		format: 'json'
 	};
 
